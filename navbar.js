@@ -12,3 +12,16 @@ buttons.forEach(button => {
     });
 })
 
+const accountbuttons = document.querySelectorAll(".beforehoveraccountoptions");
+
+accountbuttons.forEach(button => {
+    button.addEventListener("mouseenter", function () {
+
+        button.classList.add("afterhoveraccountoptions");
+    });
+
+    button.addEventListener("mouseleave", function () {
+
+        button.classList.remove("afterhoveraccountoptions");
+    });
+})
